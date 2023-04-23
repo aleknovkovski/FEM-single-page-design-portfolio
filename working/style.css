@@ -22,9 +22,11 @@ html {
     /* COLORS */
 
     --black: #030303;
+    --light-cream: #FFF7F0;
 }
 body {
     font-family: 'Plus Jakarta Sans', sans-serif;
+    background: var(--light-cream);
 }
 
 .logo img {
