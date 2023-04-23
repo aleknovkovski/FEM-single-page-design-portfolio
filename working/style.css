@@ -98,6 +98,7 @@ h1, h2 {
 .skills-grid {
     display: grid;
     grid-template-columns: 354px 164px 164px 354px;
+    /*grid-template-columns: 2fr 1fr 1fr 2fr;*/
     grid-template-rows: 182px 158px;
     gap: 24px 24px;
     grid-auto-flow: row;
