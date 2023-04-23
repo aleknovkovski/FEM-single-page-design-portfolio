@@ -186,3 +186,14 @@ h3 {
     text-align: center;
     margin-bottom: 56px;
 }
+
+.portfolio {
+    overflow: hidden;
+}
+
+.portfolio-slider {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
