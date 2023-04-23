@@ -52,6 +52,14 @@ body {
     margin: 0 auto;
 }
 
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 36px; /* because whole header is container w margin 0 auto */
+    padding-bottom: 66px; /* because whole header is container w margin 0 auto */
+}
+
 .logo img {
     width: 64px;
     height: 64px;
