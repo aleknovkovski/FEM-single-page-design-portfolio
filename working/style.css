@@ -19,3 +19,6 @@ html {
     /*--55px: 3.438rem;*/
     --56px: 3.5rem; /* Hero heading */
 }
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
