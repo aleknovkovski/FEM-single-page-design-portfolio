@@ -28,7 +28,15 @@ html {
     --black: #030303;
     --light-cream: #FFF7F0;
     --medium-brown: #7A746E;
+
+    --galactic-blue: #755CDE;
+    --summer-yellow: #F6A560;
+    --pink: #F39E9E;
+    --light-red: #EB7565;
+    --cyan: #61C4B7;
+    --dark-purple: #552049;
 }
+
 body {
     font-family: 'Plus Jakarta Sans', sans-serif;
     background: var(--light-cream);
@@ -61,4 +69,53 @@ body {
     font-size: var(--56px);
     line-height: var(--71px);
     color: var(--black)
+}
+
+.skill {
+    border-radius: 8px;
+    padding: 24px;
+    color: white;
+    font-weight: 700;
+    font-size: var(--24px)
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: 354px 164px 164px 354px;
+    grid-template-rows: 182px 158px;
+    gap: 24px 24px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "Graphic-Design UI-UX Apps Photography"
+    "Graphic-Design Illustrations Illustrations Motion-Graphics";
+}
+
+.Graphic-Design {
+    grid-area: Graphic-Design;
+    background: var(--galactic-blue);
+}
+
+.UI-UX {
+    grid-area: UI-UX;
+    background: var(--summer-yellow);
+}
+
+.Apps {
+    grid-area: Apps;
+    background: var(--pink);
+}
+
+.Illustrations {
+    grid-area: Illustrations;
+    background: var(--light-red);
+}
+
+.Photography {
+    grid-area: Photography;
+    background: var(--cyan);
+}
+
+.Motion-Graphics {
+    grid-area: Motion-Graphics;
+    background: var(--dark-purple);
 }
