@@ -19,14 +19,20 @@ html {
     /*--55px: 3.438rem;*/
     --56px: 3.5rem; /* Hero heading */
 
+    /* Line-heights */
+
+    --71px: 4.438rem; /* HeroHeading */
+
     /* COLORS */
 
     --black: #030303;
     --light-cream: #FFF7F0;
+    --medium-brown: #7A746E;
 }
 body {
     font-family: 'Plus Jakarta Sans', sans-serif;
     background: var(--light-cream);
+    color: var(--medium-brown)
 }
 
 .logo img {
@@ -46,3 +52,13 @@ body {
     padding: 14px 45px;
 }
 
+.hero {
+    text-align: center;
+}
+
+.hero-heading {
+    font-weight: 700;
+    font-size: var(--56px);
+    line-height: var(--71px);
+    color: var(--black)
+}
