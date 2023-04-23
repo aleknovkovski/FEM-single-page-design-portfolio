@@ -18,7 +18,29 @@ html {
     /*--48px: 3rem;*/
     /*--55px: 3.438rem;*/
     --56px: 3.5rem; /* Hero heading */
+
+    /* COLORS */
+
+    --black: #030303;
 }
 body {
     font-family: 'Plus Jakarta Sans', sans-serif;
 }
+
+.logo img {
+    width: 64px;
+    height: 64px;
+}
+
+.btn {
+    border-radius: 28px;
+    font-size: var(--16px);
+    text-decoration: none;
+}
+
+.btn-dark {
+    background: var(--black);
+    color: #fff;
+    padding: 14px 45px;
+}
+
