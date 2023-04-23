@@ -83,6 +83,7 @@ header {
 
 .hero {
     text-align: center;
+    margin-bottom: 80px;
 }
 
 h1, h2 {
@@ -113,6 +114,7 @@ h1, h2 {
     grid-template-areas:
     "Graphic-Design UI-UX Apps Photography"
     "Graphic-Design Illustrations Illustrations Motion-Graphics";
+    margin-bottom: 136px;
 }
 
 .Graphic-Design {
@@ -149,6 +151,7 @@ h1, h2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 88px;
 }
 
 .person-content-box {
