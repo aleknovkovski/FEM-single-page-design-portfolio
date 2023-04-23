@@ -86,7 +86,7 @@ header {
     margin-bottom: 80px;
 }
 
-h1, h2 {
+h1, h2, h3 {
     color: var(--black)
 }
 
@@ -176,4 +176,13 @@ h2 {
 
 .person-text {
     margin-bottom: 32px;
+}
+
+h3 {
+    font-size: var(--32px)
+}
+
+.slider-heading {
+    text-align: center;
+    margin-bottom: 56px;
 }
