@@ -1,0 +1,21 @@
+html {
+    --14px: 0.875rem; /* M: All Buttons */
+    /*--15px: 0.9375rem;*/
+    --16px: 1rem; /* All Buttons | M:AllParagraphs */
+    /*--17px: 1.0625rem;*/
+    --18px: 1.125rem;  /* All paragraphs */
+    /*--19px: 1.1875rem;*/
+    /*--20px: 1.25rem;*/
+    /*--21px: 1.3125rem;*/
+    --24px: 1.5rem; /* Hero box headings | M: SliderHeading*/
+    /*--25px: 1.563rem;*/
+    --26px: 1.625rem; /* M: PersonHeading, BookingHeading */
+    --32px: 2rem; /* Slider heading | TabPerson, TabBooking Heading*/
+    /*--33px: 2.063rem;*/
+    --36px: 2.25rem; /* M: Hero heading */
+    --40px: 2.5rem; /* Person, booking heading */
+    --44px: 2.75rem; /* T: Hero heading */
+    /*--48px: 3rem;*/
+    /*--55px: 3.438rem;*/
+    --56px: 3.5rem; /* Hero heading */
+}
