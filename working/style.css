@@ -52,23 +52,30 @@ body {
     border-radius: 28px;
     font-size: var(--16px);
     text-decoration: none;
+    padding: 14px 45px;
+    color: white;
 }
 
 .btn-dark {
     background: var(--black);
-    color: #fff;
-    padding: 14px 45px;
+}
+
+.btn-light {
+    background: var(--light-red);
 }
 
 .hero {
     text-align: center;
 }
 
+h1, h2 {
+    color: var(--black)
+}
+
 .hero-heading {
     font-weight: 700;
     font-size: var(--56px);
     line-height: var(--71px);
-    color: var(--black)
 }
 
 .skill {
@@ -118,4 +125,17 @@ body {
 .Motion-Graphics {
     grid-area: Motion-Graphics;
     background: var(--dark-purple);
+}
+
+.person {
+    display: flex;
+}
+
+.person-image-circle {
+    width: 445px;
+    height: 445px;
+}
+
+h2 {
+    font-size: var(--40px)
 }
