@@ -1,39 +1,69 @@
 const portfolioSlider = document.querySelector('.portfolio-slider')
 
 const data = [
-    {id: 1, src: './assets/image-slide-1.jpg'},
-    {id: 2, src: './assets/image-slide-2.jpg'},
-    {id: 3, src: './assets/image-slide-3.jpg'},
-    {id: 4, src: './assets/image-slide-4.jpg'},
-    {id: 5, src: './assets/image-slide-5.jpg'}
+    {id: 1, src: './assets/image-slide-1.jpg', transform: 0},
+    {id: 2, src: './assets/image-slide-2.jpg', transform: 0},
+    {id: 3, src: './assets/image-slide-3.jpg', transform: 0},
+    {id: 4, src: './assets/image-slide-4.jpg', transform: 0},
+    {id: 5, src: './assets/image-slide-5.jpg', transform: 0},
 ]
 
-function renderSlides() {
+function addSlide(slide) {
+    const newSlide = document.createElement('img')
+    newSlide.setAttribute('class', 'slide')
+    newSlide.setAttribute('src', slide.src)
+    portfolioSlider.appendChild(newSlide)
+}
+
+function addSlides(){
+    portfolioSlider.textContent = ''
+    addSlide(data[data.length-1])
     data.forEach((slide) => {
-        const newSlide = document.createElement('img')
-        newSlide.setAttribute('class', 'slide')
-        newSlide.setAttribute('src', slide.src)
-        portfolioSlider.appendChild(newSlide)
+        addSlide(slide)
     })
+    addSlide(data[0])
+}
+
+function renderSlides(move, speed) {
+
+    const speedInSec = (speed/1000).toFixed(2)
+    if(!move) {
+        addSlides()
+    }
+
+    if(move === 'left') {
+        const newRight = data.shift()
+        data.push(newRight)
+
+        document.querySelectorAll('.slide').forEach((slide)=> {
+            slide.style.transform = `translateX(-370px)` // +30 for the gap
+        })
+
+        setTimeout(() => {addSlides('left')}, speed + 100)
+    }
+
+    if(move === 'right') {
+
+        const newLeft = data.pop()
+        data.unshift(newLeft)
+
+        document.querySelectorAll('.slide').forEach((slide)=> {
+            slide.style.transform = `translateX(370px)` // +30 for the gap
+        })
+
+        setTimeout(() => {addSlides('right')}, speed + 100)
+    }
 }
 
 renderSlides()
 
-let position = "center"
-
 const prevSlide = document.querySelector('.prev-slide-btn')
 const nextSlide = document.querySelector('.next-slide-btn')
 
-
-
-prevSlide.addEventListener('click', () => {
-    const slides = document.querySelectorAll('.slide')
-    portfolioSlider.removeChild(slides[0])
-    portfolioSlider.appendChild(slides[0])
+nextSlide.addEventListener('click', () => {
+    renderSlides('right', 1200)
 })
 
-nextSlide.addEventListener('click', () => {
-    const slides = document.querySelectorAll('.slide')
-    portfolioSlider.removeChild(slides[slides.length-1])
-    portfolioSlider.insertBefore(slides[slides.length-1], portfolioSlider.firstChild, )
+prevSlide.addEventListener('click', () => {
+    renderSlides('left', 1200)
 })
