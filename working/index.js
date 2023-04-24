@@ -1,4 +1,5 @@
 const portfolioSlider = document.querySelector('.portfolio-slider')
+let animating = false
 
 const data = [
     {id: 1, src: './assets/image-slide-1.jpg', transform: 0},
@@ -25,10 +26,11 @@ function addSlides(){
 }
 
 function renderSlides(move, speed) {
-
+    animating = true
     const speedInSec = (speed/1000).toFixed(2)
     if(!move) {
         addSlides()
+        animating = false
     }
 
     if(move === 'left') {
@@ -36,10 +38,11 @@ function renderSlides(move, speed) {
         data.push(newRight)
 
         document.querySelectorAll('.slide').forEach((slide)=> {
-            slide.style.transform = `translateX(-370px)` // +30 for the gap
+            slide.style.transform = `translateX(-570px)` // +30 for the gap
         })
 
-        setTimeout(() => {addSlides('left')}, speed + 100)
+        setTimeout(() => {addSlides('left'); animating = false}, speed-400)
+
     }
 
     if(move === 'right') {
@@ -48,10 +51,10 @@ function renderSlides(move, speed) {
         data.unshift(newLeft)
 
         document.querySelectorAll('.slide').forEach((slide)=> {
-            slide.style.transform = `translateX(370px)` // +30 for the gap
+            slide.style.transform = `translateX(570px)` // +30 for the gap
         })
 
-        setTimeout(() => {addSlides('right')}, speed + 100)
+        setTimeout(() => {addSlides('right'); animating = false}, speed-400)
     }
 }
 
@@ -61,9 +64,9 @@ const prevSlide = document.querySelector('.prev-slide-btn')
 const nextSlide = document.querySelector('.next-slide-btn')
 
 nextSlide.addEventListener('click', () => {
-    renderSlides('right', 1200)
+    !animating && renderSlides('right', 1200)
 })
 
 prevSlide.addEventListener('click', () => {
-    renderSlides('left', 1200)
+    !animating && renderSlides('left', 1200)
 })

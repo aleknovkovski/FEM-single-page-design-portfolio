@@ -192,22 +192,24 @@ h3 {
 }
 
 .portfolio-slider {
-    width: 1110px;
     overflow: hidden;
-    padding: 100px;
     display: flex;
-    align-items: center;
     justify-content: center;
     gap: 30px;
     margin: 0 auto;
 }
 
+@media (min-width:2560px) {
+    .portfolio-slider {
+        width: 2560px;
+    }
+}
 .slider {
     width: 540px;
 }
 
 .slide {
-    width: 340px;
+    width: 540px;
     transition: transform 0.5s ease-in-out;
 }
 
