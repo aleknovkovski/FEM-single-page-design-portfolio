@@ -204,3 +204,7 @@ h3 {
     justify-content: space-around;
     gap: 30px;
 }
+
+.prev-slide-btn, .next-slide-btn {
+    cursor: pointer;
+}
