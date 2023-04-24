@@ -203,9 +203,14 @@ h3 {
     font-size: 3rem;
     justify-content: space-around;
     gap: 30px;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
-.slide {
+.portfolio-slider {
     transition: transform 1.25s;
 }
 
