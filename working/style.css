@@ -205,6 +205,10 @@ h3 {
     gap: 30px;
 }
 
+.slide {
+    transition: transform 1.25s;
+}
+
 .prev-slide-btn, .next-slide-btn {
     cursor: pointer;
 }

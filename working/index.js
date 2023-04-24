@@ -1,10 +1,11 @@
 const prevSlide = document.querySelector('.prev-slide-btn')
 const nextSlide = document.querySelector('.next-slide-btn')
+const slides = document.querySelectorAll('.slide')
 
 prevSlide.addEventListener('click', () => {
-    alert('left')
+    slides.forEach(slide => slide.style.transform = 'translateX(-560px)')
 })
 
 nextSlide.addEventListener('click', () => {
-    alert('right')
+    slides.forEach(slide => slide.style.transform = 'translateX(560px)')
 })
