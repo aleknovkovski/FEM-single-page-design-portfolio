@@ -45,7 +45,8 @@ html {
 body {
     font-family: 'Plus Jakarta Sans', sans-serif;
     background: var(--light-cream);
-    color: var(--medium-brown)
+    color: var(--medium-brown);
+    font-size: var(--18px);
 }
 
 .container {
@@ -92,7 +93,8 @@ header, footer {
 
 .hero {
     text-align: center;
-    margin-bottom: 80px;
+    margin: 0 auto 80px;
+    width: 752px;
 }
 
 h1, h2, h3 {
@@ -103,6 +105,11 @@ h1, h2, h3 {
     font-weight: 700;
     font-size: var(--56px);
     line-height: var(--71px);
+    margin-bottom: 23px;
+}
+
+.hero p {
+    width: 730px;
 }
 
 .skill {
@@ -268,7 +275,6 @@ h3 {
     justify-content: space-between;
     /*align-content: flex-start;*/
     /*justify-items: flex-start;*/
-    font-size: var(--18px);
     color: var(--light-cream);
 }
 
