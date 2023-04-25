@@ -203,7 +203,7 @@ h3 {
     display: flex;
     justify-content: center;
     gap: 30px;
-    margin: 0 auto;
+    margin: 0 auto 56px;
 }
 
 @media (min-width:2560px) {
@@ -227,6 +227,8 @@ h3 {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+
+    margin-bottom: 88px;
 }
 
 .slide-btn {
