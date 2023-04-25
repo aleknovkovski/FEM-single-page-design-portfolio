@@ -1,5 +1,6 @@
 * {
     margin: 0;
+    box-sizing: border-box;
 }
 
 html {
@@ -244,4 +245,26 @@ h3 {
 
 .slide-btn img {
     width: 15px;
+}
+
+.booking-box {
+    background: var(--black);
+    border-radius: 10px;
+    padding: 80px 95px 80px 65px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /*align-content: flex-start;*/
+    /*justify-items: flex-start;*/
+    font-size: var(--18px);
+    color: var(--light-cream);
+}
+
+.booking-box-text {
+    width: 540px;
+}
+
+.booking-box h2 {
+    margin-bottom: 25px;
+    color: var(--light-cream);
 }
