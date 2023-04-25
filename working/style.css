@@ -78,8 +78,16 @@ header, footer {
     background: var(--black);
 }
 
+.btn-dark:hover {
+    background: var(--galactic-blue);
+}
+
 .btn-light {
     background: var(--light-red);
+}
+
+.btn-light:hover {
+    background: var(--summer-yellow);
 }
 
 .hero {
@@ -241,6 +249,10 @@ h3 {
     height: 64px;
     border-radius: 50%;
     cursor: pointer;
+}
+
+.slide-btn:hover {
+    background: var(--galactic-blue)
 }
 
 .slide-btn img {
