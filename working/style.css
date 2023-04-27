@@ -22,7 +22,7 @@ html {
     --44px: 2.75rem; /* T: Hero heading */
     --50px: 3.125rem; /* Line-height for PersonHeading */
     /*--48px: 3rem;*/
-    /*--55px: 3.438rem;*/
+    --55px: 3.438rem; /* LineHeight for Hero heading*/
     --56px: 3.5rem; /* Hero heading */
 
     /* Line-heights */
@@ -99,6 +99,9 @@ header, footer {
 }
 
 .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
     margin: 0 auto 80px;
     width: 752px;
@@ -110,13 +113,37 @@ h1, h2, h3 {
 
 .hero-heading {
     font-weight: 700;
-    font-size: var(--56px);
-    line-height: var(--71px);
+    font-size: var(--44px);
+    line-height: var(--55px);
     margin-bottom: 23px;
 }
 
 .hero p {
-    width: 730px;
+    width: 573px;
+}
+
+@media screen and (min-width: 1440px) {
+
+    .hero {
+        text-align: center;
+        margin: 0 auto 80px;
+        width: 752px;
+    }
+
+    h1, h2, h3 {
+        color: var(--black)
+    }
+
+    .hero-heading {
+        font-weight: 700;
+        font-size: var(--56px);
+        line-height: var(--71px);
+        margin-bottom: 23px;
+    }
+
+    .hero p {
+        width: 730px;
+    }
 }
 
 .skill {
