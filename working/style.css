@@ -52,7 +52,7 @@ body {
 }
 
 .container {
-    width: 690px;
+    width: 343px;
     margin: 0 auto;
 }
 
@@ -92,6 +92,12 @@ footer {
 
 .btn-dark:hover {
     background: var(--galactic-blue);
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        width: 690px;
+    }
 }
 
 @media screen and (min-width: 1440px) {
