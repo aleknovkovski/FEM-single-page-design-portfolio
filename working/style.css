@@ -73,16 +73,16 @@ footer {
 }
 
 .logo img {
-    width: 64px;
-    height: 64px;
+    width: 48px;
+    height: 48px;
 }
 
 .btn {
     border-radius: 28px;
-    font-size: var(--16px);
+    font-size: var(--14px);
     line-height: var(--28px);
     text-decoration: none;
-    padding: 14px 45px;
+    padding: 8px 28px;
     color: white;
 }
 
@@ -95,6 +95,16 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
+    .btn {
+        font-size: var(--16px);
+        padding: 14px 45px;
+    }
+
+    .logo img {
+        width: 64px;
+        height: 64px;
+    }
+
     .container {
         width: 690px;
     }
