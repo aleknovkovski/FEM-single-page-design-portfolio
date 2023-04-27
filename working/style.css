@@ -20,6 +20,7 @@ html {
     --36px: 2.25rem; /* M: Hero heading */
     --40px: 2.5rem; /* Person, booking heading */
     --44px: 2.75rem; /* T: Hero heading */
+    --50px: 3.125rem; /* Line-height for PersonHeading */
     /*--48px: 3rem;*/
     /*--55px: 3.438rem;*/
     --56px: 3.5rem; /* Hero heading */
@@ -218,11 +219,12 @@ h1, h2, h3 {
 }
 
 h2 {
-    font-size: var(--40px)
+    font-size: var(--32px);
+    line-height: var(--40px);
 }
 
 .person-heading {
-    margin-bottom: 34px;
+    margin-bottom: 24px;
 }
 
 .person-text {
@@ -245,7 +247,8 @@ h2 {
     }
 
     h2 {
-        font-size: var(--40px)
+        font-size: var(--40px);
+        line-height: var(--50px);
     }
 
     .person-heading {
