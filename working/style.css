@@ -16,6 +16,7 @@ html {
     /*--25px: 1.563rem;*/
     --26px: 1.625rem; /* M: PersonHeading, BookingHeading */
     --28px: 1.75rem; /* LineHeight for Button */
+    --30px: 1.75rem; /* LineHeight for M: PortfolioSliderHeading */
     --32px: 2rem; /* Slider heading | TabPerson, TabBooking Heading*/
     --33px: 2.063rem; /* LineHeight for M: PersonHeading */
     --36px: 2.25rem; /* M: Hero heading */
@@ -400,13 +401,11 @@ h2 {
     }
 }
 
-h3 {
-    font-size: var(--32px)
-}
-
 .slider-heading {
     text-align: center;
-    margin-bottom: 56px;
+    margin-bottom: 32px;
+    font-size: var(--24px);
+    line-height: var(--30px);
 }
 
 .portfolio {
@@ -417,19 +416,29 @@ h3 {
     overflow: hidden;
     display: flex;
     justify-content: center;
-    gap: 30px;
-    margin: 0 auto 56px;
+    gap: 15px;
+    margin: 0 auto 32px;
+}
+
+@media screen and (min-width: 768px) {
+    .slider-heading {
+        font-size: var(--32px);
+        line-height: var(--40px);
+        margin-bottom: 56px;
+    }
 }
 
 @media (min-width: 2560px) {
     .portfolio-slider {
         width: 2560px;
+        margin-bottom: 56px;
     }
 }
 
 .slide {
-    width: 540px;
+    width: 270px;
     transition: transform 0.5s ease-in-out;
+    border-radius: 10px;
 }
 
 .slider-navigation-buttons {
@@ -463,6 +472,16 @@ h3 {
 
 .slide-btn img {
     width: 15px;
+}
+
+@media (min-width: 768px) {
+    .portfolio-slider {
+        gap: 30px;
+    }
+
+    .slide {
+        width: 540px;
+    }
 }
 
 /*BOOKING */
