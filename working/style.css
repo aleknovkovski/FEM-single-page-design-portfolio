@@ -17,7 +17,7 @@ html {
     --26px: 1.625rem; /* M: PersonHeading, BookingHeading */
     --28px: 1.75rem; /* LineHeight for Button */
     --32px: 2rem; /* Slider heading | TabPerson, TabBooking Heading*/
-    /*--33px: 2.063rem;*/
+    --33px: 2.063rem; /* LineHeight for M: PersonHeading */
     --36px: 2.25rem; /* M: Hero heading */
     --40px: 2.5rem; /* Person, booking heading */
     --44px: 2.75rem; /* T: Hero heading */
@@ -54,7 +54,7 @@ body {
 }
 
 .container {
-    width: 90%;
+    width: 91%;
     margin: 0 auto;
 }
 
@@ -307,30 +307,27 @@ h1, h2, h3 {
 
 .person {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 120px;
-    gap: 69px;
-    position: relative;
-    left: -88px;
-}
-
-.person-content-box {
-    width: 50%;
-    display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    flex-shrink: 0;
+    align-items: center;
+    margin-bottom: 100px;
 }
 
 .person-image-circle {
-    width: 364px;
-    height: 364px;
+    width: 90%;
+    height: 90%;
+    margin-bottom: 40px;
+}
+
+.person-content-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 h2 {
-    font-size: var(--32px);
-    line-height: var(--40px);
+    font-size: var(--26px);
+    line-height: var(--33px);
 }
 
 .person-heading {
@@ -338,7 +335,40 @@ h2 {
 }
 
 .person-text {
-    margin-bottom: 32px;
+    margin-bottom: 24px;
+}
+
+@media screen and (min-width: 768px) {
+    .person {
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 120px;
+        gap: 69px;
+        position: relative;
+        left: -88px;
+    }
+
+    .person-content-box {
+        width: 50%;
+        display: flex;
+        align-items: flex-start;
+        flex-shrink: 0;
+    }
+
+    .person-image-circle {
+        width: 364px;
+        height: 364px;
+        margin-bottom: unset;
+    }
+
+    h2 {
+        font-size: var(--32px);
+        line-height: var(--40px);
+    }
+
+    .person-text {
+        margin-bottom: 32px;
+    }
 }
 
 @media screen and (min-width: 1440px) {
