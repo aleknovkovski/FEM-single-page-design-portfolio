@@ -60,8 +60,16 @@ header, footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 36px; /* because whole header is container w margin 0 auto */
-    padding-bottom: 66px; /* because whole header is container w margin 0 auto */
+}
+
+header {
+    padding-top: 34px; /* because whole header is container w margin 0 auto */
+    padding-bottom: 64px; /* because whole header is container w margin 0 auto */
+}
+
+footer {
+    padding-top: 56px; /* because whole header is container w margin 0 auto */
+    padding-bottom: 56px; /* because whole header is container w margin 0 auto */
 }
 
 .logo img {
@@ -89,6 +97,16 @@ header, footer {
 @media screen and (min-width: 1440px) {
     .container {
         width: 1110px;
+    }
+
+    header {
+        padding-top: 34px; /* because whole header is container w margin 0 auto */
+        padding-bottom: 66px; /* because whole header is container w margin 0 auto */
+    }
+
+    footer {
+        padding-top: 56px; /* because whole header is container w margin 0 auto */
+        padding-bottom: 64px; /* because whole header is container w margin 0 auto */
     }
 }
 
