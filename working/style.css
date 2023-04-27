@@ -192,23 +192,29 @@ h1, h2, h3 {
     background: var(--dark-purple);
 }
 
+/*PERSON STYLES*/
+
 .person {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 88px;
+    margin-bottom: 120px;
+    gap: 69px;
+    position: relative;
+    left: -88px;
 }
 
 .person-content-box {
-    width: 540px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    flex-shrink: 0;
 }
 
 .person-image-circle {
-    width: 445px;
-    height: 445px;
+    width: 364px;
+    height: 364px;
 }
 
 h2 {
@@ -221,6 +227,34 @@ h2 {
 
 .person-text {
     margin-bottom: 32px;
+}
+
+@media screen and (min-width: 1440px) {
+    .person {
+        margin-bottom: 88px;
+        left: unset;
+    }
+
+    .person-content-box {
+        width: 540px;
+    }
+
+    .person-image-circle {
+        width: 445px;
+        height: 445px;
+    }
+
+    h2 {
+        font-size: var(--40px)
+    }
+
+    .person-heading {
+        margin-bottom: 34px;
+    }
+
+    .person-text {
+        margin-bottom: 32px;
+    }
 }
 
 h3 {
