@@ -8,7 +8,7 @@ html {
     /*--15px: 0.9375rem;*/
     --16px: 1rem; /* All Buttons | M:AllParagraphs */
     /*--17px: 1.0625rem;*/
-    --18px: 1.125rem;  /* All paragraphs */
+    --18px: 1.125rem; /* All paragraphs */
     /*--19px: 1.1875rem;*/
     /*--20px: 1.25rem;*/
     /*--21px: 1.3125rem;*/
@@ -50,7 +50,7 @@ body {
 }
 
 .container {
-    width: 1110px;
+    width: 690px;
     margin: 0 auto;
 }
 
@@ -81,6 +81,12 @@ header, footer {
 
 .btn-dark:hover {
     background: var(--galactic-blue);
+}
+
+@media screen and (min-width: 1440px) {
+    .container {
+        width: 1110px;
+    }
 }
 
 .btn-light {
@@ -122,22 +128,38 @@ h1, h2, h3 {
     flex-direction: column;
     align-items: flex-end;
     justify-content: space-between;
+    background: red;
 }
 
 .skill p {
     align-self: flex-start;
 }
+
 .skills-grid {
     display: grid;
-    grid-template-columns: 354px 164px 164px 354px;
-    /*grid-template-columns: 2fr 1fr 1fr 2fr;*/
-    grid-template-rows: 182px 158px;
+    grid-template-columns: 155px 155px 155px 155px;
+    /*grid-template-columns: 1fr 1fr 1fr 1fr;*/
+    grid-template-rows: 182px 158px 182px;
     gap: 24px 24px;
     grid-auto-flow: row;
     grid-template-areas:
-    "Graphic-Design UI-UX Apps Photography"
-    "Graphic-Design Illustrations Illustrations Motion-Graphics";
-    margin-bottom: 136px;
+    "Graphic-Design Graphic-Design UI-UX Apps"
+    "Graphic-Design Graphic-Design Illustrations Illustrations"
+    "Motion-Graphics Motion-Graphics Photography Photography";
+    margin-bottom: 120px;
+}
+
+@media screen and (min-width: 1440px) {
+    .skills-grid {
+        grid-template-columns: 354px 164px 164px 354px;
+        /*grid-template-columns: 2fr 1fr 1fr 2fr;*/
+        grid-template-rows: 182px 158px;
+        gap: 24px 24px;
+        grid-template-areas:
+        "Graphic-Design UI-UX Apps Photography"
+        "Graphic-Design Illustrations Illustrations Motion-Graphics";
+        margin-bottom: 136px;
+    }
 }
 
 .Graphic-Design {
@@ -222,7 +244,7 @@ h3 {
     margin: 0 auto 56px;
 }
 
-@media (min-width:2560px) {
+@media (min-width: 2560px) {
     .portfolio-slider {
         width: 2560px;
     }
