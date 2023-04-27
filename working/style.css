@@ -65,13 +65,13 @@ header, footer {
 }
 
 header {
-    padding-top: 34px; /* because whole header is container w margin 0 auto */
-    padding-bottom: 64px; /* because whole header is container w margin 0 auto */
+    padding-top: 16px; /* because whole header is container w margin 0 auto */
+    padding-bottom: 32px; /* because whole header is container w margin 0 auto */
 }
 
 footer {
-    padding-top: 56px; /* because whole header is container w margin 0 auto */
-    padding-bottom: 56px; /* because whole header is container w margin 0 auto */
+    padding-top: 40px; /* because whole header is container w margin 0 auto */
+    padding-bottom: 32px; /* because whole header is container w margin 0 auto */
 }
 
 .logo img {
@@ -97,6 +97,16 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
+    header {
+        padding-top: 34px; /* because whole header is container w margin 0 auto */
+        padding-bottom: 64px; /* because whole header is container w margin 0 auto */
+    }
+
+    footer {
+        padding-top: 56px; /* because whole header is container w margin 0 auto */
+        padding-bottom: 56px; /* because whole header is container w margin 0 auto */
+    }
+
     body {
         font-size: var(--18px);
         line-height: var(--28px)
