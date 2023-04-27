@@ -470,7 +470,7 @@ h3 {
 .booking-box {
     background: var(--black);
     border-radius: 10px;
-    padding: 56px 75px 64px 65px;
+    padding: 49px 24px 48px 24px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -479,14 +479,31 @@ h3 {
 }
 
 .booking-box-text {
-    width: 540px;
-    margin-bottom: 26px; /*only needed for tablet, but doesn't affect desktop */
+    /*width: 540px;*/
+    margin-bottom: 24px;
 }
 
 .booking-box h2 {
-    margin-bottom: 26px;
+    margin-bottom: 24px;
     color: var(--light-cream);
 }
+
+@media screen and (min-width: 768px) {
+    .booking-box {
+        padding: 56px 75px 64px 65px;
+        color: var(--light-cream);
+    }
+
+    .booking-box-text {
+        width: 540px;
+        margin-bottom: 26px; /*only needed for tablet, but doesn't affect desktop */
+    }
+
+    .booking-box h2 {
+        margin-bottom: 26px;
+    }
+}
+
 
 @media screen and (min-width: 1440px) {
     .booking-box {
