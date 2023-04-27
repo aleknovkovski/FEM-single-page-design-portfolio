@@ -54,7 +54,7 @@ body {
 }
 
 .container {
-    width: 343px;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -111,6 +111,7 @@ footer {
         font-size: var(--18px);
         line-height: var(--28px)
     }
+
     .btn {
         font-size: var(--16px);
         padding: 14px 45px;
@@ -228,16 +229,35 @@ h1, h2, h3 {
 
 .skills-grid {
     display: grid;
-    grid-template-columns: 155px 155px 155px 155px;
-    /*grid-template-columns: 1fr 1fr 1fr 1fr;*/
-    grid-template-rows: 182px 158px 182px;
+    /*grid-template-columns: 155px 155px 155px 155px;*/
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 182px 182px 182px 182px 182px 182px;
     gap: 24px 24px;
     grid-auto-flow: row;
     grid-template-areas:
-    "Graphic-Design Graphic-Design UI-UX Apps"
-    "Graphic-Design Graphic-Design Illustrations Illustrations"
-    "Motion-Graphics Motion-Graphics Photography Photography";
-    margin-bottom: 120px;
+    "Graphic-Design Graphic-Design"
+    "Graphic-Design Graphic-Design"
+    "UI-UX Apps"
+    "Illustrations Illustrations"
+    "Photography Photography"
+    "Motion-Graphics Motion-Graphics";
+    margin-bottom: 100px;
+}
+
+@media screen and (min-width: 768px) {
+    .skills-grid {
+        display: grid;
+        grid-template-columns: 155px 155px 155px 155px;
+        /*grid-template-columns: 1fr 1fr 1fr 1fr;*/
+        grid-template-rows: 182px 158px 182px;
+        gap: 24px 24px;
+        grid-auto-flow: row;
+        grid-template-areas:
+        "Graphic-Design Graphic-Design UI-UX Apps"
+        "Graphic-Design Graphic-Design Illustrations Illustrations"
+        "Motion-Graphics Motion-Graphics Photography Photography";
+        margin-bottom: 120px;
+    }
 }
 
 @media screen and (min-width: 1440px) {
