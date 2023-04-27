@@ -15,6 +15,7 @@ html {
     --24px: 1.5rem; /* Hero box headings | M: SliderHeading*/
     /*--25px: 1.563rem;*/
     --26px: 1.625rem; /* M: PersonHeading, BookingHeading */
+    --28px: 1.75rem; /* LineHeight for Button */
     --32px: 2rem; /* Slider heading | TabPerson, TabBooking Heading*/
     /*--33px: 2.063rem;*/
     --36px: 2.25rem; /* M: Hero heading */
@@ -71,6 +72,7 @@ header, footer {
 .btn {
     border-radius: 28px;
     font-size: var(--16px);
+    line-height: var(--28px);
     text-decoration: none;
     padding: 14px 45px;
     color: white;
